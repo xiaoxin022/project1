@@ -24,7 +24,7 @@ public class UserService {
 		return userDao.findUserByUserName(userName);
 	}
 	public void loginSuccess(User user){
-		user.setCredits(user.getCredits()+10);
+		user.setCredits(user.getCredits()+15);
 		LoginLog loginLog = new LoginLog();
 		loginLog.setUserId(user.getUserId());
 		loginLog.setIp(user.getLastIP());
